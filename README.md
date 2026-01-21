@@ -37,3 +37,22 @@ As a simple implementation, LSH has several limitations:
 - No job control
 - No environment variable expansion
 
+## Usage
+Compile the shell with:
+```
+gcc main.c -o shell.exe
+```
+
+Run the shell:
+```
+.\shell.exe
+```
+
+Example commands:
+```
+> cd directory_name    # Change directory. Eg: cd /ls
+> help                 # Display help
+> exit                 # Exit the shell
+> command arguments    # Run external command. Eg: notepad.exe, calc.exe
+```
+
