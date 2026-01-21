@@ -56,3 +56,16 @@ Example commands:
 > command arguments    # Run external command. Eg: notepad.exe, calc.exe
 ```
 
+## Windows-Specific Considerations
+This implementation adapts Unix shell concepts to Windows by:
+- Using Windows-specific headers like `<windows.h>` and `<direct.h>`
+- Replacing Unix process creation with Windows' `CreateProcess()`
+- Managing Windows process handles instead of process IDs
+
+## Further Development
+Potential improvements include:
+- Adding support for I/O redirection
+- Implementing pipes for command chaining
+- Adding environment variable support
+- Implementing command history and tab completion
+- Adding job control capabilities
